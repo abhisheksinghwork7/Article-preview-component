@@ -1,0 +1,78 @@
+@import "variable"
+
+*,* *
+    margin: 0
+    padding: 0
+
+html
+    font-family: 'Poppins', sans-serif
+    box-sizing: border-box
+
+body
+    font-size: 0.9375rem
+
+.container
+    width: 19.375rem
+    margin: 5.8125rem auto
+    h1
+        color: $very-dark-blue
+    span
+        font-weight: $light
+    p
+        color: $grayish-blue
+
+.header
+    margin: 0 0 5rem 0
+    p
+        margin-top: 2rem
+
+.feature
+    margin-top: 1.6875rem
+    box-shadow: 0 0.25rem 0.5rem 0.0625rem $border-color
+    padding: 2rem 1rem
+    border-radius: 0.5rem
+    border-top: 0.25rem solid
+    img
+        margin-top: 2.3125rem
+
+.feature__image
+    text-align: right
+
+.feature__cyan
+    border-top-color: $cyan
+
+.feature__red
+    border-top-color: $red
+
+.feature__orange
+    border-top-color: $orange
+
+.feature__blue
+    border-top-color: $blue
+
+@media screen and ( min-width: 992px )
+    .container
+        width: 69.375rem
+    .header
+        h1
+            font-size: 1.625rem
+            margin: 0 24rem
+        p
+            margin: 2rem 19rem
+            text-align: center
+    .feature
+        height: 13.625rem
+        flex: 0 0 19.875rem
+
+    .feature__image
+        margin-top: 2.75rem
+
+    .feature__box
+        display: flex
+        justify-content: space-between
+
+    .feature_inner_box
+        width: 21.875rem
+
+    .feature__shift
+        margin-top: 8.875rem
