@@ -9,6 +9,7 @@ html {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
   line-height: 1.5;
+  background-color: #ecf2f8;
 }
 
 body {
@@ -32,6 +33,7 @@ main {
   -webkit-box-shadow: 0 0.25rem 0.5rem 0.0625rem rgba(54, 54, 54, 0.4);
           box-shadow: 0 0.25rem 0.5rem 0.0625rem rgba(54, 54, 54, 0.4);
   position: relative;
+  background-color: white;
 }
 
 .image-holder > img {
