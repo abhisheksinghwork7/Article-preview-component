@@ -1,0 +1,235 @@
+*, * * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8125rem;
+}
+
+main {
+  width: 20.625rem;
+  margin: 4.625rem auto 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.25rem 0.5rem 0.0625rem rgba(54, 54, 54, 0.4);
+          box-shadow: 0 0.25rem 0.5rem 0.0625rem rgba(54, 54, 54, 0.4);
+  position: relative;
+}
+
+.image-holder > img {
+  width: 20.625rem;
+  height: 12.5rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image-article {
+  margin: 2.625rem 2rem 0;
+}
+
+.image-article h1 {
+  font-size: 1rem;
+  color: #48556a;
+  text-align: left;
+}
+
+.image-article p {
+  margin-top: 1.375rem;
+  color: #6d7f97;
+}
+
+.avatar-info {
+  margin: 2rem 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20.625rem;
+}
+
+.avatar-info img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.avatar-info .avatar-img {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 0 0 0 2rem;
+}
+
+.avatar-info .avatar-details b {
+  color: #48556a;
+}
+
+.avatar-info .avatar-details span {
+  color: #6d7f97;
+}
+
+.avatar-info .avatar-details {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.avatar-info .share-img {
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0 0 0.5rem;
+  background-color: #ecf2f8;
+  cursor: pointer;
+}
+
+.avatar-info .share-img img {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.5rem;
+}
+
+.avatar-info .open-share-btn {
+  background-color: #9eafc2;
+}
+
+.share-details {
+  width: 20.625rem;
+  height: 4rem;
+  position: absolute;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #48556a;
+  color: white;
+  border-radius: 0 0 1rem 1rem;
+  z-index: 0;
+  display: none;
+}
+
+.share-details img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.share-details label {
+  margin-top: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share-details .icons-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 45.625rem;
+    height: 17.5rem;
+  }
+  .image-holder {
+    width: 17.875rem;
+    height: inherit;
+    border-radius: 1rem  0 0 1rem;
+    overflow: hidden;
+    float: left;
+    margin-right: 2.625rem;
+  }
+  .image-holder img {
+    width: 120%;
+    height: inherit;
+    border-radius: 1rem  0 0 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .avatar-info {
+    width: 25rem;
+    margin-top: 1.4375rem;
+  }
+  .avatar-info .avatar-img {
+    margin-left: 0;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+  .avatar-info .avatar-details {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .share-details {
+    width: 15.635rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1rem;
+    left: 33rem;
+    bottom: 0.5rem;
+  }
+  .share-details label {
+    margin-top: 1.4375rem;
+  }
+  .share-details .icons-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .share-details::after {
+    content: "";
+    position: absolute;
+    border: solid 15px transparent;
+    border-top-color: #48556a;
+    top: 4rem;
+  }
+  .image-article {
+    margin-right: 3.5rem;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
