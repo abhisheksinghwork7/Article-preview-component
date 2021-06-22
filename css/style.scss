@@ -1,0 +1,208 @@
+//colors
+$dark-grayish-blue:hsl(217, 19%, 35%);
+$dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+//boder-shadow
+$border-shadow:rgba(54, 54, 54, 0.4);
+//weight
+$regular: 500;
+$bold: 700;
+
+*,* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    font-family: 'Manrope', sans-serif;
+    font-weight: $regular;
+    line-height: 1.5;
+    background-color: $light-grayish-blue;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8125rem;
+    
+}
+
+main{
+    width:20.625rem;
+    margin:4.625rem auto 0;
+    border-radius: 1rem;
+    box-shadow: 0 .25rem 0.5rem 0.0625rem $border-shadow;
+    position: relative;
+    background-color: white;
+    
+}
+
+.image-holder>img{
+    width: 20.625rem;
+    height: 12.5rem;
+    border-radius: 1rem 1rem 0 0;
+}
+.image-article{
+    margin: 2.625rem 2rem 0;
+    h1{
+        font-size: 1rem;
+        color: $dark-grayish-blue;
+        text-align: left;
+    }
+
+    p{
+        margin-top: 1.375rem;
+        color: $dark-blue;
+    }
+}
+
+.avatar-info{
+    margin: 2rem 0 1.25rem;
+    display: flex;   
+    width:20.625rem;
+    img{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+    }
+    .avatar-img{
+        flex-basis: 20%;
+        margin:0 0 0 2rem;
+    }
+    .avatar-details{
+        b{
+            color: $dark-grayish-blue;
+        }
+        span{
+            color: $dark-blue;
+        }
+    }
+    .avatar-details{
+        flex-basis: 50%;
+    }
+
+    .share-img{
+        z-index: 1;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        margin: 0.5rem 0 0 0.5rem;
+        background-color: $light-grayish-blue;
+        cursor: pointer;
+        img{        
+        width: 1rem;
+        height: 1rem;
+        padding: 0.5rem;
+        }
+    } 
+    .open-share-btn{
+    background-color: $grayish-blue;
+    }
+
+}
+.share-details{
+    width:20.625rem;
+    height: 4rem;
+    position: absolute;
+    transform: translateY(-4rem);
+    display:flex;
+    justify-content: flex-start;
+    background-color: $dark-grayish-blue;
+    color: white;      
+    border-radius: 0 0 1rem 1rem;
+    z-index: 0;
+    img{
+        width:1.25rem;
+        height:1.25rem;
+    }
+    label{
+        margin-top:1.5rem;
+        letter-spacing: 3px;
+        text-align: center;
+        flex-basis: 35%;
+        align-items: center;
+    }
+    .icons-box{
+        align-items: center;
+        flex-basis:30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    display: none;
+}
+
+.open{
+    display:flex;
+    
+}
+
+@media screen and (min-width: 992px){    
+    
+    main{
+        width: 45.625rem;
+        height: 17.5rem;
+        margin-top: 16.0625rem;
+        
+    }
+    .image-holder{    
+        width:17.875rem;
+        height: inherit;
+        border-radius: 1rem  0 0 1rem; 
+        overflow: hidden;
+        float: left;    
+        margin-right: 2.625rem;
+            img{               
+            width: 120%;
+            height: inherit;   
+            border-radius: 1rem  0 0 1rem;             
+            object-fit: cover;
+        }
+    }
+    .avatar-info{
+        width: 25rem;
+        margin-top: 1.4375rem;
+        .avatar-img{
+            margin-left: 0;
+            flex-basis: 15%;
+        }
+        .avatar-details{
+            flex-basis: 60%;
+        }
+    }
+    .share-details{
+        width: 15.635rem;
+        justify-content: center;
+        border-radius: 1rem;
+        left: 33rem;
+        bottom: 0.5rem;
+        label{
+            margin-top: 1.4375rem;
+        }
+        .icons-box{
+            justify-content: space-between;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            border: solid 15px transparent;
+            border-top-color: $dark-grayish-blue;
+            top:4rem;
+        }
+    }
+    .image-article{
+    margin-right:3.5rem;
+    }
+}
+
+footer{
+    margin-top: 4rem;
+}
+
+
+
